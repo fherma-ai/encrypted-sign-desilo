@@ -18,7 +18,7 @@
 
   // Threads the engine may use. 0 leaves the choice to the library, which
   // takes the machine. Pin it when the measurement is about one core.
-  "thread_count": 24,
+  "thread_count": 8,
 
   // Which card, when mode is "gpu".
   "device_id": 0,
