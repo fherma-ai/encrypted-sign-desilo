@@ -61,6 +61,7 @@ solution/
   solve.py       the four functions — the only file written by hand
   series.py      the published coefficients, unchanged
   config.jsonc   the engine: scheme, mode, level budget, which keys
+solution-gpu/    the same four functions, with the engine on a card
   fherma.toml    what it implements, and with what
   envelope.py    generated — engine, keys, encryption. Holds the secret key
   main.py        generated — the measured loop
