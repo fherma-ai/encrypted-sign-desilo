@@ -35,6 +35,14 @@ one series of degree 1023 by reading the component's own arithmetic back at
 Chebyshev nodes — it recovers the coefficients rather than fitting them, and
 reproduces the component to 1.3e-13.
 
+## The engine takes the machine
+
+`mode` is `parallel`, not `cpu`. They are different engines, not two speeds of
+one: `cpu` computes in a single thread, and a number measured there is a number
+about one core, which is not what the answers beside this one are measured at.
+The thread count is the cores the runner reports rather than the library's own
+default of four, for the same reason.
+
 ## Accuracy
 
 The specification holds every element within 0.01 of ±1 on `|x| >= 0.02`. This

@@ -14,11 +14,11 @@
   // Where the engine computes: "cpu" | "gpu". A GPU engine needs an image
   // built from a CUDA wheel and a machine with a card; the specification's
   // environment requirements are what get you one.
-  "mode": "cpu",
+  "mode": "parallel",
 
   // Threads the engine may use. 0 leaves the choice to the library, which
   // takes the machine. Pin it when the measurement is about one core.
-  "thread_count": 0,
+  "thread_count": 24,
 
   // Which card, when mode is "gpu".
   "device_id": 0,
